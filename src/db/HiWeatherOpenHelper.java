@@ -1,5 +1,5 @@
 package db;
-
+//æµ‹è¯•ä¿®æ”¹ä»£ç èƒ½å¦åœ¨sourcetreeä¸Šæäº¤åˆ°github
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteDatabase.CursorFactory;
@@ -8,14 +8,14 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class HiWeatherOpenHelper extends SQLiteOpenHelper {
 	
 	/**
-	 * Province±í½¨±íÓï¾ä
+	 * ProvinceÂ±Ã­Â½Â¨Â±Ã­Ã“Ã¯Â¾Ã¤
 	 */
 	public static final String CREATE_PROVINCE = "create table Province("
 			+ "id integer primary key autoincrement, "
 			+ "province_name text, "
 			+ "province_code text)";
 	/**
-	 * City±í½¨±íÓï¾ä
+	 * CityÂ±Ã­Â½Â¨Â±Ã­Ã“Ã¯Â¾Ã¤
 	 */
 	public static final String CREATE_CITY = "create table City ("
 			+ "id integer primary key autoincrement, "
@@ -23,7 +23,7 @@ public class HiWeatherOpenHelper extends SQLiteOpenHelper {
 			+ "city_code text, "
 			+ "province_id integer)";
 	/**
-	 * County±í½¨±íÓï¾ä
+	 * CountyÂ±Ã­Â½Â¨Â±Ã­Ã“Ã¯Â¾Ã¤
 	 */
 	public static final String CREATE_COUNTY = "create table County ("
 			+ "id integer primary key autoincrement, "
@@ -39,9 +39,9 @@ public class HiWeatherOpenHelper extends SQLiteOpenHelper {
 	@Override
 	public void onCreate(SQLiteDatabase db) {
 		// TODO Auto-generated method stub
-		db.execSQL(CREATE_PROVINCE); //´´½¨Province±í
-		db.execSQL(CREATE_CITY); //´´½¨City±í
-		db.execSQL(CREATE_COUNTY); //´´½¨County±í
+		db.execSQL(CREATE_PROVINCE); //Â´Â´Â½Â¨ProvinceÂ±Ã­
+		db.execSQL(CREATE_CITY); //Â´Â´Â½Â¨CityÂ±Ã­
+		db.execSQL(CREATE_COUNTY); //Â´Â´Â½Â¨CountyÂ±Ã­
 	}
 
 	@Override
